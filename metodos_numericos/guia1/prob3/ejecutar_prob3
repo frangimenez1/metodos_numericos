@@ -1,0 +1,7 @@
+gnuplot -persist problema3.gnu
+
+gnuplot: Invoca al intérprete matemático.
+
+-persist: REGLA CRÍTICA PARA GRÁFICOS EN PANTALLA. Cuando gnuplot lee un script y grafica en la pantalla (en lugar de exportar a PNG o PDF), su comportamiento por defecto es cerrar la ventana gráfica milisegundos después de terminar de leer la última línea del archivo. Si no pones la bandera -persist (persistir), verás un "parpadeo" en la pantalla y la ventana desaparecerá. Esta orden le dice al sistema: "Dibuja el gráfico y deja la ventana abierta hasta que yo la cierre manualmente con la X".
+
+problema3.gnu: Le pasas como argumento el archivo que acabas de crear para que lo lea de principio a fin.

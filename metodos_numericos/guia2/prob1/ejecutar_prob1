@@ -1,0 +1,1 @@
+gfortran parametros_prob1.f90 funciones_prob1.f90 metodos_prob1.f90 prob1.f90 -o prob1.x

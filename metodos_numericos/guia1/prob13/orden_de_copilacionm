@@ -1,0 +1,9 @@
+El orden estricto en la terminal debe ser:
+
+gfortran -c parametros.f90 (Crea parametros.mod y parametros.o)
+
+gfortran -c funciones.f90 (Crea funciones.mod y funciones.o)
+
+gfortran -c prob13.f90 (Crea prob13.o)
+
+gfortran parametros.o funciones.o prob13.o -o ejecutable.e
